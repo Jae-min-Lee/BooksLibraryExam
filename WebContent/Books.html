@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서관리 시스템 메인 화면</title>
+<style type="text/css">
+body {
+	background-image: url('dd.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(29, 140, 219);
+}
+
+div {font : normal 24px verdana;
+} 
+.multiEffect { color :yellow;
+	text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-size:35px;
+}
+.txt1{overflow:scroll;}
+</style>
+</head>
+<body>
+	<form action="BooksAction.jsp" method="post" maxlength="50">
+		<br>
+		<br>
+		<br>
+		<h1 align="center"><div class="multiEffect">Books Information</div></h1>
+		<table align="center">
+			<tr>
+				<td>ISBN</td>
+				<td><input type="text" name="isbn" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Title</td>
+				<td><input type="text" name="Tttle" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Author</td>
+				<td><input type="text" name="author" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Publisher</td>
+				<td><input type="text" name="publisher" size="50"
+					maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Price</td>
+				<td><input type="text" name="price" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Category</td>
+				<td><input type="text" name="category" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Description</td>
+				<td><textarea class="txt1" rows="9" cols="52" name="description"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit"
+					value="submit">&nbsp;&nbsp;&nbsp; <input type="reset"
+					value="reset">&nbsp;&nbsp;&nbsp; <input type="button"
+					value="Listall" onclick="javascript:location.href='info_list.jsp'">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
